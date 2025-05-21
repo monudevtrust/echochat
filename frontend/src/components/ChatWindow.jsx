@@ -45,7 +45,7 @@ const ChatWindow = () => {
 
     try {
       // Send message to backend
-      const response = await fetch('http://172.16.16.143:8000/chat', {
+      const response = await fetch('https://echochat-5pjv.vercel.app/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text: inputText }),
