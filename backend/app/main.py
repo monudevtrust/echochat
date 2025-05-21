@@ -7,7 +7,7 @@ app = FastAPI()
 # Enable CORS to allow frontend communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "https://echochat-flax.vercel.app"],  # Add your IP
+    allow_origins=["*"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
